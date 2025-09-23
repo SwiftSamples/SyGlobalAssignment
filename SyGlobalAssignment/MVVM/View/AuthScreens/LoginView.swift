@@ -94,8 +94,10 @@ struct LoginView: View {
         
         if CoreDataManager.shared.fetchUser(userModel: loginUser) {
             print("Login successful")
-            session.isLoggedIn = true
-            isLoginTapped = true
+            withAnimation(.easeInOut(duration: 0.5)) {
+                session.isLoggedIn = true
+                isLoginTapped = true
+            }
         } else {
             print("Invalid username or password")
         }

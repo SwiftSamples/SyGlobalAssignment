@@ -15,6 +15,8 @@ struct RegisterView: View {
     @State private var userConfirmPassword: String = ""
     @State private var isRegTapped: Bool = false
     
+    @EnvironmentObject var session: SessionManager
+
     var body: some View {
         ZStack {
             gradientColor(color1: .purple, color2: .blue)
@@ -101,7 +103,10 @@ struct RegisterView: View {
                     userPassword: self.userPassword
                 )
             )
-            isRegTapped = true
+            withAnimation(.easeInOut(duration: 0.5)) {
+                session.isLoggedIn = true
+                isRegTapped = true
+            }
         } else {
             print("Name already exists")
         }

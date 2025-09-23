@@ -25,6 +25,7 @@ struct HomeView: View {
                 
                 listView
                 
+                Spacer()
             }
             .navigationDestination(isPresented: $navigateToCreateOrder) {
                 CreateOrder()
@@ -39,7 +40,9 @@ struct HomeView: View {
     
     var logoutButton: some View {
         Button(action: {
-            session.isLoggedIn = false
+            withAnimation {
+                session.isLoggedIn = false
+            }
         }) {
             Text("Logout")
                 .foregroundColor(.white)
@@ -80,7 +83,7 @@ struct HomeView: View {
     var listView: some View {
         Group {
             if orders.isEmpty {
-                VStack(spacing: 12) {
+                VStack(alignment: .center, spacing: 12) {
                     Image(systemName: "shippingbox.circle.fill")
                         .resizable()
                         .frame(width: 80, height: 80)
@@ -94,6 +97,7 @@ struct HomeView: View {
                         .font(.subheadline)
                         .foregroundColor(.gray.opacity(0.8))
                 }
+                .frame(maxWidth: .infinity)
                 .padding(.top, 100)
             } else {
                 List(orders) { order in
