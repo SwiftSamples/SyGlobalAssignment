@@ -40,34 +40,17 @@ func gradientColor(
 
 struct CustomHeaderView: View {
     var title: String
-    var onBack: (() -> Void)? = nil
     
     var body: some View {
         HStack {
-            // Back button
-            Button(action: {
-                onBack?()
-            }) {
-                Image(systemName: "chevron.left")
-                    .font(.title2)
-                    .foregroundColor(.blue)
-                    .padding(.leading)
-            }
-            
             Spacer()
             
-            // Title
             Text(title)
-                .font(.headline)
-                .fontWeight(.bold)
+                .font(.system(size: 30, weight: .bold))
                 .foregroundColor(.primary)
             
             Spacer()
-            
-            // Invisible button for alignment
-            Image(systemName: "chevron.left")
-                .opacity(0)
-                .padding(.trailing)
+    
         }
         .padding(.vertical, 12)
         .background(Color(.systemGray6))

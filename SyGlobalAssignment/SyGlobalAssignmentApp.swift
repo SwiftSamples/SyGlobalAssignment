@@ -14,7 +14,8 @@ struct SyGlobalAssignmentApp: App {
     var body: some Scene {
         WindowGroup {
             if session.isLoggedIn {
-                HomeView()
+//                HomeView()
+                TabContainerView()
                     .environmentObject(session)
             } else {
                 LoginView()

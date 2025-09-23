@@ -17,9 +17,8 @@ struct CreateOrder: View {
     var body: some View {
         VStack(spacing: 10) {
             
-            CustomHeaderView(title: "Create Order") {
-                dismiss()
-            }
+            CustomHeaderView(title: "Create Order")
+            
             Divider()
             
             contentFieldsView()
