@@ -38,7 +38,7 @@ struct RegisterView: View {
         }
       
         .navigationDestination(isPresented: $isRegTapped) {
-            HomeView()
+            TabContainerView()
         }
         .navigationBarBackButtonHidden(true)
     }

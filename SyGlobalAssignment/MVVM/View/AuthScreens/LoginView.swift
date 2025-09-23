@@ -39,7 +39,7 @@ struct LoginView: View {
             .navigationBarBackButtonHidden(true)
             
             .navigationDestination(isPresented: $isLoginTapped) {
-                HomeView()
+                TabContainerView()
             }
             .navigationDestination(isPresented: $isRegTapped) {
                 RegisterView()
