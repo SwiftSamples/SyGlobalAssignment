@@ -47,13 +47,13 @@ struct RegisterView: View {
     var contentView: some View {
         
         VStack(spacing: 20) {
-            TextField("Enter Name here", text: $userName)
+            TextField("Enter Name", text: $userName)
                 .roundedTextFieldStyle()
             
-            SecureField("Enter Password here", text: $userPassword)
+            SecureField("Enter Password", text: $userPassword)
                 .roundedTextFieldStyle()
             
-            SecureField("Enter Confirm Password here", text: $userConfirmPassword)
+            SecureField("Enter Confirm Password", text: $userConfirmPassword)
                 .roundedTextFieldStyle()
             
             Button(action: {
