@@ -50,7 +50,7 @@ struct LoginView: View {
     var contentView: some View {
         
         VStack(spacing: 20) {
-            TextField("Enter email or user name here", text: $userName)
+            TextField("Enter email or user name", text: $userName)
                 .roundedTextFieldStyle()
             SecureField("Password", text: $uaerPassword)
                 .roundedTextFieldStyle()
