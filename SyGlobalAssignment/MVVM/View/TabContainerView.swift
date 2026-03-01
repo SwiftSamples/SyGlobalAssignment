@@ -69,7 +69,7 @@ struct TabContainerView: View {
 struct ExploreView: View {
     var body: some View {
         VStack {
-            CustomHeaderView(title: "Explore")
+            CustomHeaderView(title: "Explore test")
             
             Color.yellow.opacity(0.3)
                 .overlay(Text("Explore View").font(.largeTitle))
