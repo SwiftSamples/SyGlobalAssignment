@@ -80,7 +80,9 @@ struct RegisterView: View {
             HStack {
                 Text("Already have an account? change in main unnecessary")
                     .foregroundColor(.gray)
-                Text("rewrite the line in main with change")
+
+                Text("Already have an account?")
+                    .foregroundColor(.gray)
 
                 NavigationLink("Login", destination: LoginView())
                     .foregroundColor(.purple)
