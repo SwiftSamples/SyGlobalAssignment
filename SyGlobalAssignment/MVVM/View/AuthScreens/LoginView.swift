@@ -50,14 +50,11 @@ struct LoginView: View {
     var contentView: some View {
         
         VStack(spacing: 20) {
-            Text("adding line in main to check conflict")
 
-            TextField("Enter email or user name here code in development", text: $userName)
+            TextField("Enter email or user name", text: $userName)
                 .roundedTextFieldStyle()
             SecureField("Password", text: $uaerPassword)
                 .roundedTextFieldStyle()
-            
-            Text("adding one more line to check conflicts while merging in dev branch")
             
             Button(action: {
                 loginAction()
