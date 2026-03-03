@@ -78,9 +78,10 @@ struct RegisterView: View {
             .buttonStyle(.plain)
             
             HStack {
-                Text("Already have an account?")
+                Text("Already have an account? change in main unnecessary")
                     .foregroundColor(.gray)
-                
+                Text("rewrite the line in main with change")
+
                 NavigationLink("Login", destination: LoginView())
                     .foregroundColor(.purple)
                     .bold()
