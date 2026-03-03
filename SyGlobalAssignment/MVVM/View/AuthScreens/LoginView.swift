@@ -54,7 +54,7 @@ struct LoginView: View {
                 .roundedTextFieldStyle()
             SecureField("Password", text: $uaerPassword)
                 .roundedTextFieldStyle()
-            
+            Text("Checking merging in git with dev branch to main")
             Button(action: {
                 loginAction()
             }) {
