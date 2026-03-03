@@ -83,6 +83,9 @@ struct RegisterView: View {
                 Text("Already have an account?")
                     .foregroundColor(.gray)
                 
+                Text("Already have an account?")
+                    .foregroundColor(.gray)
+
                 NavigationLink("Login", destination: LoginView())
                     .foregroundColor(.purple)
                     .bold()
