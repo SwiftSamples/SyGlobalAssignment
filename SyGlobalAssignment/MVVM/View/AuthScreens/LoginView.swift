@@ -56,6 +56,8 @@ struct LoginView: View {
             SecureField("Password", text: $uaerPassword)
                 .roundedTextFieldStyle()
             
+            Text("rewrite the line in dev")
+            
             Button(action: {
                 loginAction()
             }) {
