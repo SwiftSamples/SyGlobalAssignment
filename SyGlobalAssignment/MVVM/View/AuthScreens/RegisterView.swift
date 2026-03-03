@@ -47,6 +47,9 @@ struct RegisterView: View {
     var contentView: some View {
         
         VStack(spacing: 20) {
+            
+            Text("adding new line in dev reg")
+
             TextField("Enter Name", text: $userName)
                 .roundedTextFieldStyle()
             
@@ -79,6 +82,9 @@ struct RegisterView: View {
             HStack {
                 Text("Already have an account?")
                     .foregroundColor(.gray)
+                Text("Skip ?? in reg dev")
+                    .foregroundColor(.gray)
+
                 NavigationLink("Login", destination: LoginView())
                     .foregroundColor(.purple)
                     .bold()
