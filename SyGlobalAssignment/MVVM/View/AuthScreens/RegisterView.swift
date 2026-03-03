@@ -56,6 +56,9 @@ struct RegisterView: View {
             SecureField("Enter Confirm Password", text: $userConfirmPassword)
                 .roundedTextFieldStyle()
             
+            Text("adding line in main to check conflict reg!!")
+
+            
             Button(action: {
                 registerAction()
             }) {
