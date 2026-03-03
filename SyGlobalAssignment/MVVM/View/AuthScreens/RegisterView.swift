@@ -82,9 +82,7 @@ struct RegisterView: View {
             HStack {
                 Text("Already have an account?")
                     .foregroundColor(.gray)
-                Text("Skip ?? in reg dev")
-                    .foregroundColor(.gray)
-
+                
                 NavigationLink("Login", destination: LoginView())
                     .foregroundColor(.purple)
                     .bold()
