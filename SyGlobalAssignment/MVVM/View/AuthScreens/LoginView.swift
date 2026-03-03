@@ -59,6 +59,8 @@ struct LoginView: View {
             Text("Checking merging in git with dev branch to main")
             
             Text("adding one more line to check conflicts while merging in dev branch")
+            
+            Text("new line")
 
             Button(action: {
                 loginAction()
