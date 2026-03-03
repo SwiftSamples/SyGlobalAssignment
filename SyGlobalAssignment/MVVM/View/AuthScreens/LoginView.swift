@@ -50,7 +50,7 @@ struct LoginView: View {
     var contentView: some View {
         
         VStack(spacing: 20) {
-
+            Text("this is secon commit in main")
             TextField("Enter email or user name", text: $userName)
                 .roundedTextFieldStyle()
             SecureField("Password", text: $uaerPassword)
